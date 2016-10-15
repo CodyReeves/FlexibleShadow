@@ -1,0 +1,88 @@
+//Example css this is not needed
+
+$box-size: 100px;
+$light-grey: #ECEFF1;
+$blue: #40C4FF;
+$white: #fff;
+
+body {
+  margin: 0 auto 30px auto;
+  background-color: $blue;
+  font: {
+    family: Helvetica, sans-serif;
+    weight: normal;
+    size: 18px;
+  }
+
+  h1, h3 {
+    text-align: center;
+    color: darken($blue, 40%);
+  }
+
+  h1 {
+    margin-bottom: 5px;
+    @include shadow(t-shadow, 1, inset, text, darken($blue, 40%));
+  }
+
+  h3 {
+    margin-top: 5px;
+    @include shadow(t-shadow, 1, inset, text, darken($blue, 40%));
+  }
+}
+
+h3 + .container {
+  padding-top: 30px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #81D4FA;
+  @include shadow(light, 1);
+
+  h2 {
+    margin: 0;
+    color: $white;
+    text-align: center;
+    @include shadow(t-shadow, 1, inset, text, $white);
+  }
+}
+
+.box {
+  width: $box-size;
+  height:$box-size;
+  background-color: $light-grey;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 15px;
+
+    &:fist-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@for $shadow from 1 through 5 {
+  .light-shadow li:nth-child(#{$shadow}){
+    @include shadow(light, $shadow);
+  }
+  .dark-shadow li:nth-child(#{$shadow}){
+    @include shadow(dark, $shadow);
+  }
+  .light-shadow-inset li:nth-child(#{$shadow}){
+    @include shadow(light, $shadow, inset);
+  }
+  .dark-shadow-inset li:nth-child(#{$shadow}){
+    @include shadow(dark, $shadow, inset);
+  }
+} 
