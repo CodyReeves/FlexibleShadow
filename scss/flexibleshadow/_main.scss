@@ -15,10 +15,10 @@
  */
 
 //set to true to enable warnings when useing the mixin
-$debug:true !default;
+$debug: false !default;
 
 //Set to true if you want to enable inset text shadows -- sorta works sorta dosent
-$inset-text-hack: true !default;
+$inset-text-hack: false !default;
 
 //shadow vars that will be used -- set to default to if needed to be overwritten else where
 $shadow-d-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)!default;
