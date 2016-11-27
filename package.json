@@ -1,5 +1,5 @@
 {
-  "name": "FlexibleShadow",
+  "name": "flexible-shadow",
   "version": "1.0.0",
   "description": "A flexible SCSS mixin to generate shadow easily and efficiently",
   "author": "Cody Reeves <codreev@gmail.com>",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodyReeves/FlexibleShadow"
+    "url": "https://github.com/CodyReeves/flexible-shadow"
   },
   "bugs": {
-    "url": "https://github.com/CodyReeves/FlexibleShadow/issues"
+    "url": "https://github.com/CodyReeves/flexible-shadow/issues"
   },
   "keywords": [
     "Shadow",
