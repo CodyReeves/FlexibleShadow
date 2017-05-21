@@ -7,14 +7,19 @@ http://codepen.io/CR-Design/pen/zKEdLN
 # Installation
 Add mixen yourself through manually implementing in your own Scss or
 
+
 **Install Via Npm**
+
 Add to package.json:
+
 `"flexible-shadows": "git://github.com/CodyReeves/flexible-shadows.git"`
 
 Add To Scss:
+
 `@import {PATH}/node_modules/flexible-shadow/scss/flexibleshadow/main`
 
 # Usage:
+
 Examples of how you can write `@include`.
 
 ```
