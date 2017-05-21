@@ -45,11 +45,11 @@ Examples of how you can write `@include`.
 
 ## Arguments 
 
-** Required **
+**Required**
 - `$type` - light, dark, t-shadow (Can be more if more types are created)
 - `$level` - 1, 2, 3, 4, or 5 (Each type has 5 levels, more can be created)
 
-** Optional **
+**Optional**
 - `$shadow-style` - can be `inset` or `default`
 - `$text` - set as `text` to  enable text shadow 
 - `$text-color` - colors the text, NOTE: if args equal `$shadow-style: inset` and `$text: text`, `$inset-text-hack` has to be set to `true`, if it is not enabled result not guarenteed. 
